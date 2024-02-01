@@ -76,6 +76,22 @@ img {
   gap: 40px;
 }
 
+.active {
+  position: relative;
+  color: #404bbf;
+}
+
+.active::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  border-radius: 2px;
+  background-color: #404bbf;
+  height: 4px;
+  width: 100%;
+}
+
 .header-navigation-link {
   color: #2e2f42;
   font-size: 16px;
